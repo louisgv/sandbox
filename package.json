@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "scripts": {
+        "start": "lerna run start --parallel",
+        "bootstrap": "lerna bootstrap",
+        "test": "lerna run test",
+        "prepare": "lerna run prepare",
+        "clean": "rimraf packages/**/lib",
+        "watch": "lerna run watch --parallel"
+    },
+    "devDependencies": {
+        "gh-pages": "^1.1.0",
+        "lerna": "^2.11.0",
+        "rimraf": "^2.6.2"
+    },
+    "workspaces": [
+        "packages/*"
+    ]
+}
