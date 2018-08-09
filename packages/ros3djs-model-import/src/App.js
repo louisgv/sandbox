@@ -8,7 +8,7 @@ const HEIGHT = 450;
 export default class App extends Component {
 
     componentDidMount() {
-        const mesh = new ROS3D.MeshResource({resource: 'knight.dae', path: '/', warnings: true});
+        const mesh = new ROS3D.MeshResource({resource: 'runestone.dae', path: '/', warnings: true});
 
         const viewer = new ROS3D.Viewer({divID: '3d-view', width: WIDTH, height: HEIGHT});
 

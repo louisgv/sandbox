@@ -8,8 +8,10 @@
     sandbox
 </h1>
 
-<h2 align="center">
+# <h2 align="center">
+
     A monorepo for all experiment targeted toward solving issues in the world.
+
 </h2>
 
 # Goal
@@ -20,30 +22,24 @@ A personal sandbox used to test a variety of library in hope that it will aid in
 
 Install global tooling dependencies:
 
-```
-npm i -g lerna yarn
-```
+    npm i -g lerna yarn
 
 Install dependencies (run in `/path/to/sandbox`)
 
-```
-yarn
-lerna bootstrap
-```
+    yarn
+    lerna bootstrap
 
 Run these anywhere within `path/to/sandbox` to start the server (i.e, you can run them from child project or path):
 
-```
-lerna run --parallel watch # or in the root of sandbox, do "yarn watch"
-```
+    yarn start
 
-# Run Modes
+# Link to Project:
 
-To run the sandbox in local mode:
+Since Sandbox was made to demonstrate and fix issue in other repo, here's a table of all the issue it tried to fix, together with the URL of the app exposed once you run `yarn start`:
 
-```
-LOCAL=true lerna run watch --parallel
-```
+| Package              | Issue                                                                     | Local Link     |
+| -------------------- | ------------------------------------------------------------------------- | -------------- |
+| ros3djs-model-import | [ros3djs/issues/209](https://github.com/RobotWebTools/ros3djs/issues/209) | localhost:3001 |
 
 # Credits
 
@@ -51,5 +47,5 @@ Logo created using [DotGrid](https://github.com/hundredrabbits/Dotgrid) by [Devi
 
 # License
 
-- GSM
-- MIT
+-   GSM
+-   MIT
